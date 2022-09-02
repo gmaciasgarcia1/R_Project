@@ -1,0 +1,40 @@
+---
+title: "HW1"
+author: "Gregorio"
+date: "2022-08-26"
+output: word_document
+---
+# Q1.
+
+## Calculate 4+5-6
+```{r}
+4+5-6
+```
+## Calculate the square root of 25
+```{r}
+sqrt(25)
+```
+## Create a new object y and assign it to the value 100
+```{r}
+y <- 100
+```
+## Calculate the logarithm to base 10 of y (hint: use log10() function)
+```{r}
+log10(y)
+```
+# Q2.
+
+## Generate 1000 random numbers from a normal deviation with mean 0 and standard deviation 10. (Do not print out the 1000 numbers on the solution document.) Save the results into object x.
+```{r}
+x <- rnorm(1000, mean = 0, sd = 10)
+```
+## Plot a histogram for x object. (Hint: use hist() function)
+```{r}
+hist(x, col = "blue")
+```
+
+## Calculate the mean and variance of x. (Hint: R already has a built-in function to calculate variance, search online to find this function)
+```{r}
+mean(x)
+var(x)
+```
