@@ -1,0 +1,51 @@
+---
+title: "HW2"
+author: "Gregorio"
+date: "2022-09-01"
+output: word_document
+---
+
+### 1.) Create a vector x. x contains a sequence of integers from 11 to 16.
+```{r}
+x <- c(11:16)
+```
+### 2.) Name the elements of x using words: eleven, twelve, thirteen, fourteen, fifteen and sixteen.
+```{r}
+names(x) <- c("eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen")
+x
+```
+### 3.) Index the element "twelve - 12" by its name.
+```{r}
+x["twelve"]
+```
+### 4.) Index the 3rd and 4th elements in the vector.
+```{r}
+x[3:4]
+```
+
+### 5.) Remove the names in the x vector.
+```{r}
+names(x) <- NULL
+x
+```
+
+### 6.) Use filtering to subset values that has a square value larger than or equal to 144. (Hint: use ">=")
+```{r}
+x[x^2 >= 144]
+```
+### 7.) Coerce the vector x into a matrix x of 3 rows and 2 columns.
+```{r}
+dim(x) <- c(3,2)
+x
+```
+
+### 8.) Transpose the matrix and save it into object y
+```{r}
+y <- t(x)
+y
+```
+### 9.) Calculate the mean of each row for x using the apply() function.
+```{r}
+apply(x, 1, mean)
+```
+
